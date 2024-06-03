@@ -12,54 +12,68 @@
 
 </head>
 <!--
-  colocar os icones de descida
-  alinhar as imagens e tamanhos
-  alinhar as perguntas junto com as respostas
-  função para descer as palavras, mas usar uma função só
+  rodar os icones e alterar as cores,
+  
 -->
 
 <body>
+
   <main>
     <div id="image-container">
-      <img src="./images/bg-pattern-desktop.svg" alt="black triangle">
-      <img src="./images/illustration-box-desktop.svg" alt="orange box with @">
-      <img src="./images/illustration-woman-online-desktop.svg" alt="Woman see a bg screen">
+
+      <img id="orange-box" src="./images/illustration-box-desktop.svg" alt="orange box with @">
+      <img id="woman-screen" src="./images/illustration-woman-online-desktop.svg" alt="Woman see a bg screen">
     </div>
     <ul>
       <h1 id="title">FAQ</h1>
-      <li class="faq-containers">
-        <h3 class="titles-container" id="question1"> How many team members can I invite?<span class="arrow-icon"></span>
+      <li class="faq-containers first">
+        <h3 class="titles-container" id="question1" onclick="toggleAnswer('answer1')"> How many team members can I
+          invite?<img id="arrow1" class="arrow" src="./images/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="rotative arrow">
         </h3>
-        <p id="answer1">You can invite up to 2 additional users on the Free plan. There is no limit on
+        <p id="answer1" class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on
           team members for the Premium plan.</p>
+        <hr />
       </li>
       <li class="faq-containers">
-        <h3 class="titles-container" id="question2">What is the maximum file upload size?<span
-            class="arrow-icon"></span></h3>
-        <p id="answer2">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        <h3 class="titles-container" id="question2" onclick="toggleAnswer('answer1')">What is the maximum file upload
+          size?<img id="arrow2" class="arrow" src="./images/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="rotative arrow"></h3>
+        <p id="answer2" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.
+        </p>
+        <hr>
       </li>
       <li class="faq-containers">
-        <h3 class="titles-container" id="question3">How do I reset my password?<span class="arrow-icon"></span></h3>
-        <p id="answer3">Click “Forgot password” from the login page or “Change password” from your profile page.
+        <h3 class="titles-container" id="question3" onclick="toggleAnswer('answer1')">How do I reset my password?<img
+            id="arrow3" class="arrow" src="./images/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="rotative arrow"></h3>
+        <p id="answer3" class="answer">Click “Forgot password” from the login page or “Change password” from your
+          profile page.
           A reset link will be emailed to you.</p>
+        <hr />
       </li>
       <li class="faq-containers">
-        <h3 class="titles-container" id="question4">Can I cancel my subscription?<span class="arrow-icon"></span></h3>
-        <p id="answer4">Yes! Send us a message and well process your request no questions asked.</p>
+        <h3 class="titles-container" id="question4" onclick="toggleAnswer('answer1')">Can I cancel my subscription?<img
+            id="arrow4" class="arrow" src="./images/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="rotative arrow"></h3>
+        <p id="answer4" class="answer">Yes! Send us a message and well process your request no questions asked.</p>
+        <hr />
       </li>
       <li class="faq-containers">
-        <h3 class="titles-container" id="question5">Do you provide additional support?<span
-            class="arrow-icon"></span>/h3>
-          <p id="answer5">Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </p>
+        <h3 class="titles-container" id="question5" onclick="toggleAnswer('answer1')">Do you provide additional
+          support?<img id="arrow5" class="arrow" src="./images/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="rotative arrow">
+        </h3>
+        <p id="answer5" class="answer">Chat and email support is available 24/7. Phone lines are open during normal
+          business hours.
+        </p>
+        <hr />
       </li>
     </ul>
+    <script src="index.js"></script>
+  </main>
+  <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Lucas de Lacerda</a>.
     </div>
-    <script src="index.js"></script>
-  </main>
+
+  </footer>
 </body>
 
 </html>
